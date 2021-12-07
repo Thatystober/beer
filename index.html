@@ -4,119 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <title>StoberBeer</title>
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <title>Adocei</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="row">
+        <nav class="top">
+            <div class="row-my">
                 <ul class="main-nav">
-                    <li><a href="#">novidades</a></li>
-                    <li><a href="#">sobre</a></li>
-                    <li><a href="#">produtos</a></li>
-                    <li><a href="#">contate</a></li>
+                    <li><a href="#news">novidades</a></li>
+                    <li><a href="#about">sobre</a></li>
+                    <li><a href="#gallery">produtos</a></li>
+                    <li><a href="#contact">contate</a></li>
                 </ul>
+                <a href="#" class="mobile-nav-icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a>
             </div>
-        <nav>
+        </nav>
         <div class="text-top">
-           <h1>Lorem Ipsum</h1>
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-           <a class="btn btn-ghost" href="#">Mais informações</a>
+           <h1>Confeitaria Adocei</h1>
+           <p>Adoçando os seus dias.</p>
+           <div class="button">
+                <button class="info">Mais informações</button>
+           </div>
+           
         </div>
     </header>
     <section id="news">
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <div>
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, 
-                remaining essentially unchanged.
+        <div class="text">
+            <h2>Venha conhecer nosso novo Cantinho</h2>
+            <p>Carinho, dedicação, criatividade e paixão. Estes são alguns dos segredos da Confeitaria Adocei 
+                para produzir seus deliciosos e queridos bolos, doces e lanches. 
+                Com o compromisso de fazer produtos saudáveis, sempre utilizando ingredientes sadios e frescos,
+                para que o cliente saiba que qualquer produto escolhido nas vitrines acabou de ser feito, 
+                com os melhores ingredientes.
             </p>
-            <a class="btn btn-ghost" href="#">Mais informações</a>
+            <div class="button">
+                <button class="info">Mais informações</button>
+            </div> 
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="figure1">
+            <img class="news" src="resources/img/card.png" alt="">
+        </div>
+        <div class="figure2">
+            <img class="news2" src="resources/img/card_2.png" alt="">
+            <img class="news3" src="resources/img/card_3.png" alt="">
         </div>
     </section>
+
+    <div class="none">
+        <a href="#about">
+            <span></span>
+        </a>
+    </div>
+    
     <section id="about">
-        <div>
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, 
-                remaining essentially unchanged.
-            </p>
+        <div class="intro">
+            <img src="resources/img/product1.png" alt="">
+            <div class="text-about">
+                <h2>Nossa empresa</h2>
+                <p>Uma empresa familiar, que com seriedade, respeito e muito empenho, procura trazer a todos os dias para seus clientes bolos, tortas, doces e salgados de ótima qualidade e confiabilidade, 
+                    para que você “Experimente o lado doce da vida!”
+                    Além de saborear estas delícias em nossas lojas, você também pode encomendá-las.
+                </p>
+                <p>Valores:</p>
+                <p>- Ética, honestidade, e respeito aos clientes, colaboradores e parceiros;</p>
+                <p>- Engajamento e compromisso com o cliente e com o desenvolvimento social;</p>
+                <p>- Criatividade, inovação e excelência no desenvolvimento dos produtos e serviços.</p>
+                
+            </div>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="figure3">
+            <div class="slide-products">
+                <div class="swiper-products">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="resources/img/product.png" alt=""></div>
+                      <div class="swiper-slide"><img src="resources/img/product2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="resources/img/product3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="resources/img/product4.png" alt=""></div>
+        
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="gallery">
-        <h3>Lorem Ipsum</h3>
-        <!-- GALERIA -->
+        <h3>Nossa delicias</h3>
+
+        <div class="gallery-itens">
+            <div class="container">
+                <div class="portfolio-menu mt-2 mb-4">
+                   <ul>
+                      <li class="btn btn-outline-dark active all" data-filter="*">All</li>
+                      <li class="btn btn-outline-dark all" data-filter=".gts">CupCakes</li>
+                      <li class="btn btn-outline-dark all" data-filter=".ma">Macarons</li>
+                   </ul>
+                </div>
+                <div class="portfolio-item row">
+                   <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria.png" class="fancylight popup-btn" data-fancybox-group="light"> 
+                      <img class="img-fluid" src="resources/img/galeria.png" alt="">
+                      </a>
+                   </div>
+                   <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria1.png" class="fancylight popup-btn" data-fancybox-group="light"> 
+                        <img class="img-fluid" src="resources/img/galeria1.png" alt="">
+                      </a>
+                   </div>
+                   <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria2.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria2.png" alt="">
+                      </a>
+                   </div>
+                   <div class="item  col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria3.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria3.png" alt="">
+                      </a>
+                   </div>
+                   <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria4.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria4.png" alt="">
+                      </a>
+                   </div>
+                   <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria5.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria5.png" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="resources/img/galeria6.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria6.png" alt="">
+                      </a>
+                   </div>
+
+                    <div class="item ma col-lg-3 col-md-4 col-6 col-sm">
+                        <a href="resources/img/galeria7.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria7.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="item ma col-lg-3 col-md-4 col-6 col-sm">
+                        <a href="resources/img/galeria8.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria8.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item ma col-lg-3 col-md-4 col-6 col-sm">
+                        <a href="resources/img/galeria9.png" class="fancylight popup-btn" data-fancybox-group="light">
+                        <img class="img-fluid" src="resources/img/galeria9.png" alt="">
+                        </a>
+                    </div>
+                 </div>
+                   
+                </div>
+             </div>
+        </div>
     </section>
+
     <section id="contact">
-        <div>
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, 
-                remaining essentially unchanged.
+        <div class="text-contact">
+            <h2>Entre em contato com nós!</h2>
+            <p>Tire suas dúvidas, conte-nos suas experiências conosco
+                e estamos sempre abertos para sugestões. 
             </p>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="figure4">
+            <img src="resources/img/contact.png" alt="">
         </div>
-        <div>
-            <h3>Lorem Ipsum</h3>
+        <div class="form">
+            <h3>Entre em Contato</h3>
             <form action="">
-                <div>
-                    <input type="text" placeholder="Lorem Ipsum">
-                    <input type="text">
+                <div class="persona">
+                    <input type="text" placeholder="Nome: ">
+                    <input type="text" placeholder="E-mail:">
                 </div>
                 <div>
-                    <input type="text" placeholder="Lorem Ipsum">
-                    <select name="" id=""></select>
+                    <input type="text" placeholder="Telefone">
+                    <select name="" id="">
+                        <option value="1">Dúvida</option>
+                        <option value="2">Experiencia</option>
+                        <option value="3">Sugestões</option>
+                    </select>
                 </div>
                 <div>
+                    <label for="">Sua mensagem: </label>
                     <textarea name="" id="" cols="20" rows="5"></textarea>
                 </div>
-                <div>
-                    <button>Enviar</button>
-                    <button>Limpar</button>
+                <div class="button">
+                    <input type="submit" class="info">
                 </div>
             </form>
         </div>
     </section>
     <footer>
-        <nav>
-            <div class="row">
-                <ul class="main-nav">
-                    <li><a href="#">novidades</a></li>
-                    <li><a href="#">sobre</a></li>
-                    <li><a href="#">produtos</a></li>
-                    <li><a href="#">contate</a></li>
-                </ul>
-            </div>
-        <nav>
+       
         <!-- logo -->
-        <img src="resources/img/logo.png" alt="StoberBeer" class="logo">
-        <div>
-            <h4>redes sociais</h4>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="logo-footer">
+            <img src="resources/img/logo.png" alt="Adocei" class="logo">
+            <hr>
         </div>
-        <a href="">Privacidade</a>
+        <div class="main-social">
+            <nav class="footer-main">
+                <div class="row-my">
+                    <ul class="main-nav">
+                        <li><a href="#">novidades</a></li>
+                        <li><a href="#">sobre</a></li>
+                        <li><a href="#">produtos</a></li>
+                        <li><a href="#">contate</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social-networks">
+                <h4>Redes Sociais</h4>
+                <img src="resources/img/icon_insta.svg" alt="">
+                <img src="resources/img/icon_link.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="copy">
+            <p>© Adocei - Cnpj - 00.0000.000/0001-00</p>
+        </div>
+        
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="resources/js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 </body>
+
 </html>

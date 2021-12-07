@@ -1,0 +1,252 @@
+/*O valor dessa query de ser o mesmo valor da propriedade de largura máxima (width) 
+da classe ROW que definimos no style.css.
+Lembrando que a esse valor deveria ter sido definido com base na tela da sua estação de trabalho (workstation)*/
+@media only screen and (max-width: 1200px){
+    
+    
+    }
+    
+    @media only screen and (max-width: 1023px){
+        .sticky{
+            display: block;
+        }
+
+        .top .main-nav{
+            display: block;
+        }
+
+        #news{
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        .figure2 {
+            margin: 0 auto;
+        }
+
+        .none {
+            height: 20vh;
+        }
+
+        #about{
+            flex-direction: column;
+        }
+
+        section#about:after{
+            width: 100%;
+        }
+
+        #about .intro{
+            width: 95%;
+            margin-top: 1em;
+        }
+
+        #about .figure3{
+            width: 40%;
+        }
+
+        #contact{
+            flex-wrap: wrap;
+        }
+
+        .text-contact{
+            width: 50%;
+        }
+
+        #contact .figure4{
+            width: 45%;
+        }
+
+        .form{
+            margin: 0 auto;
+        }
+
+        .text-top{
+            left: 50%;
+        }
+    }
+
+    
+    
+    @media only screen and (max-width: 767px){
+        .sticky{
+            display: none;
+        }
+
+        
+        .top .row-my .mobile-nav-icon{
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 1em;
+            font-size: 2em;
+        }
+
+        .top .main-nav{
+            display: none;
+            float: left;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            z-index: 2;
+            background: #db6d6d;
+            box-shadow: 0 2px 2px #33333347;
+            padding-right: 2em;
+            border-radius: 0.5em;
+        }
+
+        .top .main-nav li {
+            display: block;
+            padding: 1em 0 0 1em;
+            margin-left: 0;
+        }
+        
+        .top .main-nav li:last-child {
+            padding-bottom: 1em;
+        }
+
+        .top .main-nav li a:link, 
+        .top .main-nav li a:visited {
+            border: 0;
+            padding: 10px 0;
+            font-size: 80%;
+        }
+
+        #news{
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .text-top {
+            width: 66%;
+            left: 48%;
+        }
+
+        button.info {
+            width: 50%;
+        }
+
+        .figure2 {
+            margin-top: 1em;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .none {
+            height: 10vh;
+        }
+
+        section#about:after{
+            width: 100%;
+            height: 129vh;
+        }
+
+        #about,
+        #contact,
+        .persona{
+            flex-direction: column;
+        }
+
+        /* .portfolio-item{
+            flex-direction: column!important;
+        } */
+        #about .intro{
+            margin-left: 1em;
+            margin-right: 1em;
+            width: 95%;
+        }
+
+        #about .intro img{
+            width: 50%;
+            margin: 1em auto;
+        }
+
+        #about .slide-products img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #about .figure3 {
+            width: 83%;
+        }
+
+        #gallery {
+            padding-top: 4em;
+        }
+
+        .text-contact {
+            width: 100%;
+        }
+
+        #contact .figure4 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #contact .form {
+            margin-top: 1em;
+            width: 100%;
+        }
+
+        nav.footer-main {
+            width: 55%;
+        }
+
+        .main-social {
+            margin-right: 1em;
+        }
+
+        .text {
+            width: 90%;
+            margin: 0em 1em 1em 1em;
+        }
+
+        .text-about {
+            margin-top: 1em;
+        }
+    }
+    
+    
+    @media only screen and (max-width: 480px){
+        #contact,
+        #about,
+        #about .intro,
+        #news,
+        .persona {
+            flex-direction: column;
+        }
+
+        .none span{
+            margin-left: 2em;
+        }
+
+        .top .row-my .mobile-nav-icon{
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 1em;
+            font-size: 2em;
+        }
+
+        .none {
+            height: 18vh;
+        }
+
+        section#about:after{
+            height: 80vh;
+        }
+
+        .text-about {
+            margin-top: 0;
+            width: 90%;
+        }
+
+        #about .intro{
+            margin-top: 1em;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #contact .figure4{
+            width: 90%;
+        }
+        
+    }
