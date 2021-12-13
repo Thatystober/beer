@@ -198,12 +198,12 @@ Lembrando que a esse valor deveria ter sido definido com base na tela da sua est
 
         .top .main-nav{
             display: none;
-            float: left;
+            /* float: left; */
             position: absolute;
             top: 0em;
             left: 0em;
             z-index: 2;
-            background: #db6d6d;
+            background: #db6d6db8;
             box-shadow: 0 2px 2px #33333347;
             padding-right: 2em;
             border-radius: 0.5em;
