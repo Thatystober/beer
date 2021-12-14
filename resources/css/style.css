@@ -198,6 +198,10 @@ button.info:hover {
     margin: 0em 3em 0 5em;
 }
 
+#news .text p:nth-child(3){
+    margin-bottom: 0;
+}
+
 #news .info {
     color: #E56361;
     width: 40%;
@@ -223,12 +227,12 @@ img.news2 {
 
 /* None */
 .none{
-    height: 18vh;
+    height: 20vh;
 }
 
 .none span{
     position: absolute;
-    top: -76px;
+    top: -67px;
     left: 50%;
     width: 24px;
     height: 24px;
@@ -300,6 +304,12 @@ section#about:after {
 .text-about {
     margin-left: 1em;
 }
+
+.text-about ul{
+    list-style: none;
+    font-size: 16px;
+}
+
 
 .text-about h3 {
     text-align: center;
@@ -385,6 +395,8 @@ section#about:after {
 }
 
 input[type="text"],
+input[type="email"],
+input[type="cel"],
 textarea,
 select{
     border: 1px solid #BFBBBB;
@@ -400,6 +412,8 @@ textarea{
 }
 
 input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="cel"]:focus-visible,
 select:focus-visible,
 textarea:focus-visible{
     outline-offset: unset;
@@ -421,7 +435,7 @@ textarea:focus-visible{
 
 #contact {
     margin: 2em;
-    margin-left: 1em;
+    margin-left: 3em;
 }
 
 .persona {
@@ -479,6 +493,12 @@ footer .logo-footer hr {
 
 .social-networks h4 {
     font-size: 1em;
+}
+
+.social-networks ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .main-social{
